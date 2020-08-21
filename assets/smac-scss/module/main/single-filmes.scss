@@ -1,0 +1,143 @@
+@import "../layout";
+@import "../../colors";
+
+.single {
+
+  .filme {
+
+    .filme-header {
+      background-color: $colorPrimary;
+      color: $bodyBG;
+      margin-bottom: 40px;
+
+      .filme-thumb {
+        .card {
+          border-radius: 0;
+          border: none;
+          background-color: transparent;
+        }
+        .modal {
+          background-color: $colorPrimary;
+        }
+        .modal-dialog {
+          overflow: auto;
+          iframe {
+            width: 100%;
+            height: 400px;
+          }
+          form {
+            .esqueceu-senha {
+              color: $colorPrimary
+            }
+          }
+        }
+      }
+      .filme-infos {
+
+        padding: 20px 30px;
+
+        h2, h4, h5, .tax-item a {
+          color: $color4!important;
+        }
+
+        h3, p {
+          color: $bodyBG;
+        }
+
+        h2 {
+          font-size: 22px;
+          margin-top: 1rem;
+        }
+
+        h3 {
+          margin-bottom: 4px !important;
+        }
+
+        h4 {
+          margin: 20px 0 10px;
+        }
+
+      }
+    }
+
+    .filme-ficha {
+
+      h4 {
+        font-size: 18px;
+        color: $colorTertiary;
+      }
+
+      .list-group-ficha, .list-group-premios, .list-group-ficha-item, .list-group-premios-item {
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        padding: 10px 0;
+      }
+
+      .list-group-ficha, .list-group-premios {
+        margin-bottom: 20px;
+      }
+
+      .list-group-premios {
+        padding: 10px 20px;
+        .list-group-premios-item::before {
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          font-size: 30px;
+          color: #293462;
+          font-weight: bold;
+          display: inline-block;
+          width: 20px;
+          margin-left: -20px;
+          line-height: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      .list-group-ficha-item {
+
+        .label {
+          color: $colorTertiary;
+          font-weight: 700;
+        }
+
+      }
+
+    }
+
+    .direcao {
+      background-color: #FFFFFF;
+      padding: 20px;
+      text-align: right;
+
+      .direcao-thumb {
+
+        margin-bottom: 20px;
+
+      }
+
+      .direcao-title {
+
+        font-size: 18px;
+        color: $colorTertiary;
+        padding: 10px;
+
+      }
+
+      p {
+
+      }
+
+      .direcao-contato {
+
+        .label {
+          font-weight: 700;
+          color: $colorTertiary;
+        }
+
+      }
+
+    }
+
+  }
+
+}

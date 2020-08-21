@@ -1,0 +1,35 @@
+@media (min-width: 576px) and (max-width: 650px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 651px) and (max-width: 720px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 721px) and (max-width: 767.98px) {
+  .container {
+    max-width: 767.98px;
+  }
+}
+.footer-brand {
+  padding: 0;
+  text-transform: uppercase;
+}
+.footer-brand h1 {
+  font-size: 22px;
+  margin-bottom: 0;
+  line-height: 1em;
+  text-align: left;
+  color: #ebebeb;
+  transition: 0.2s;
+}
+.footer-brand h2 {
+  margin-bottom: 0;
+  color: #f7be16;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=footer-bar.css.map */

@@ -1,0 +1,51 @@
+@media (min-width: 576px) and (max-width: 650px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 651px) and (max-width: 720px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 721px) and (max-width: 767.98px) {
+  .container {
+    max-width: 767.98px;
+  }
+}
+.jumbotron-banco {
+  border-radius: 0;
+  background-image: url("../../../img/passaro-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-size: cover;
+  height: 580px;
+}
+.jumbotron-banco h3, #main .jumbotron-banco h3 {
+  color: #293462;
+  text-shadow: #FFFFFF 1px 1px;
+  font-size: 26px;
+  text-transform: inherit;
+  text-align: center;
+  font-weight: 800;
+  margin: 20px 20px;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+.jumbotron-banco .jumbotron-btn {
+  text-align: left;
+  margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px 0;
+}
+.jumbotron-banco .jumbotron-btn::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 12px;
+}
+.jumbotron-banco .jumbotron-hr {
+  border-color: rgba(247, 190, 22, 0.4);
+}
+
+/*# sourceMappingURL=jumbotron-banco.css.map */

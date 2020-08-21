@@ -1,0 +1,139 @@
+@import "../layout";
+@import "../../colors";
+
+.search-form {
+  .input-group {
+    background-color: #FFFFFF;
+  }
+  .btn-banco {
+    font-weight: 700;
+    color: #FFFFFF;
+    &:focus,
+    &:not(:disabled):not(.disabled):active {
+      color: #FFFFFF;
+    }
+    &.active,
+    &:hover {
+      background-color: $color4!important;
+      border-color: $color4!important;
+      color: #000000;
+    }
+  }
+  .btn-pesquisa_avancada {
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
+.ms-options-wrap {
+  * {
+    box-sizing: border-box;
+  }
+
+  & > button:focus,
+  & > button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    padding: 5px 20px 5px 5px;
+    margin-top: 1px;
+    font-size: 13px;
+    color: #aaa;
+    outline: none;
+    white-space: nowrap;
+  }
+
+  & > button:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 0;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-top-color: #999;
+    margin-top: -3px;
+  }
+
+  & > .ms-options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background: white;
+    z-index: 2000;
+    border: 1px solid #aaa;
+
+    ul {
+      padding: 15px;
+      li {
+        list-style: none;
+      }
+    }
+
+    & > .ms-search input {
+      width: 100%;
+      padding: 4px 5px;
+      border: none;
+      border-bottom: 1px groove;
+      outline: none;
+    }
+
+    .ms-selectall {
+      display: inline-block;
+      font-size: .9em;
+      text-transform: lowercase;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    & > .ms-selectall.global {
+      margin: 4px 5px;
+    }
+
+    & > ul > li.optgroup {
+      padding: 5px;
+
+      & + li.optgroup {
+        border-top: 1px solid #aaa;
+      }
+
+      .label {
+        display: block;
+        padding: 5px 0 0 0;
+        font-weight: bold;
+      }
+    }
+
+    & > ul label {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    & > ul {
+      li.selected label, label:hover {
+        background-color: #efefef;
+      }
+      column-gap: 0!important;
+      column-count: 1!important;
+      @media (min-width: 576px) {
+        column-count: 3!important;
+      }
+    }
+
+    & > ul input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+  }
+
+}
